@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: linux-tweet-deployment
+  labels:
+    app: linux-tweet-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: linux-tweet-app
+  template:
+    metadata:
+      labels:
+        app: linux-tweet-app
+    spec:
+      containers:
+      - name: linux-tweet
+        image: mikegcoleman/linux_tweet_app
+        ports:
+        - containerPort: 80
