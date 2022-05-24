@@ -5,7 +5,7 @@ Este repositorio incluye los script y documentos correspondientes a las partes 1
 ### Parte 2
 La aplicación utilizada es una aplicación simple basada en Nginx que permite al usuario generar un tweet.
 
-![Arquitectura simple de aplicación](/home/mauricio/Documents/2022-1/Cloud/Tareas/Tarea_2/Cloud-Computing-Tarea-2/Diagramas/diag2.drawio.png) 
+![Arquitectura simple de aplicación](/Diagramas/diag2.drawio.png) 
 
 Cuando el usuario se conecta a la aplicación a través del proxy, el servidor corriendo en un container le responde con el archivo `index.html`.
 
